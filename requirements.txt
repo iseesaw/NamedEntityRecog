@@ -1,0 +1,22 @@
+### 运行环境
+
+Python3.6
+
+### CRF+BiLSTM模型所依赖库及框架
+
+keras 2.2.4 (基于keras框架搭建CRF+BiLSTM模型, 最好>=2.2.0, 否则使用keras-contrib中CRF可能报错)
+(pip install keras==2.2.4)
+
+tensorflow 1.12 (keras后端, 实验中使用1.9报错, 后来改用1.12, 在服务器上使用1.11时也能使用)
+(pip install tensorflow==1.12)
+
+keras-contrib (提供CRF+BiLSTM模型中的CRF层, 如果没有git, 可以从GitHub上下载下来安装, 具体可参考下面的GitHub网址)
+(pip install git+https://www.github.com/keras-team/keras-contrib.git)
+
+### CRF模型所依赖库
+
+python-crfsuite (提供CRF实现)
+(pip install python-crfsuite)
+
+nltk (提供词性标注, ！！！安装后直接使用可能出错, 会提示安装两个数据库)
+(pip install nltk) 
