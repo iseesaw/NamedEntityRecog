@@ -1,5 +1,6 @@
 
 ## 基于CRF+BiLSTM的命名实体识别
+>详见文档[document.pdf](document.pdf)
 ### 特征提取
 extract_feature.py 特征提取程序源代码  
 feature.txt 特征文件(直接提取时不包含词性, 在CRF模型的实验中为了达到更好的效果, 调用了nltk的词性标注接口, F1值会有所提高)  
